@@ -94,7 +94,7 @@ main ol li{
 
 .logo img{
   justify-content: space-around;
-  width: 3%;
+  width: 50px;
   height: auto;
 }
 
@@ -116,7 +116,7 @@ a:hover {
 }
 
 /* estilo de medios mobile */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   nav h1 {
     font-size: 32px;
   }
@@ -136,7 +136,7 @@ a:hover {
   }
 
   .logo img{
-    width: 10%;
+    width: 10px;
   }
 }
 
