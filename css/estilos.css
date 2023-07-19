@@ -7,7 +7,7 @@ body {
 
 /* Estilos del encabezado */
 header {
-  color: antiquewhite;
+  color: rgb(236, 218, 194);
   padding: 20px;
   text-align: center;
 }
@@ -40,11 +40,7 @@ main {
   color: rgb(236, 209, 174);
 }
 
-main p,
-div,
-h1,
-h3,
-h2 {
+main p, div, h1, h3, h2, h4 {
   text-align: center;
 }
 
@@ -55,7 +51,7 @@ main ol li{
 
 .foto img {
   display: flex;
-  width: 70%;
+  width: 50%;
   height: auto;
   margin-bottom: 20px;
   margin-left: 60px;
@@ -161,7 +157,7 @@ a:hover {
 }
 
 /* estilo de medios mobile */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   nav h1 {
     font-size: 32px;
   }
@@ -177,7 +173,8 @@ a:hover {
   }
 
   .logo img{
-    width: 10px;
+    width: 20px;
+    height: auto;
   }
 }
 
