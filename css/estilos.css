@@ -7,7 +7,6 @@ body {
 
 /* Estilos del encabezado */
 header {
-  background-color: black;
   color: antiquewhite;
   padding: 20px;
   text-align: center;
@@ -37,9 +36,8 @@ nav ul li a {
 
 /* Estilos del contenido principal */
 main {
-  padding: 20px;
-  background-color: black;
-  color: antiquewhite;
+  padding: 20px;;
+  color: rgb(236, 209, 174);
 }
 
 main p,
@@ -56,10 +54,15 @@ main ol li{
 }
 
 .foto img {
-  display: block;
-  width: 100%;
+  display: flex;
+  width: 70%;
   height: auto;
   margin-bottom: 20px;
+  margin-left: 60px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px rgb(26, 25, 25);
+  filter: opacity(0.7);
+
 }
 
 .galeria {
@@ -75,12 +78,47 @@ main ol li{
 .galeria img {
   width: 100%;
   height: auto;
+  border-radius: 6px;
+  box-shadow: 0px 10px 25px black;
 }
 
-.back img {
-  margin-top: 40px;
-  width: 20%;
-  height: auto;
+.linea img{
+display: inline-block;
+transition: transform 0.3s ease;
+border-radius: 6px;
+box-shadow:0px 15px 25px black;
+}
+
+.linea:hover {
+  transform: scale(1.2)
+}
+
+.realismo img{
+  display: inline-block;
+transition: transform 0.3s ease;
+border-radius: 6px;
+box-shadow:0px 15px 25px black;
+}
+.realismo:hover{
+  transform: scale(1.2)
+}
+.micro img{
+  display: inline-block;
+transition: transform 0.3s ease;
+border-radius: 6px;
+box-shadow:0px 15px 25px black;
+}
+.micro:hover{
+  transform: scale(1.2)
+}
+.flores img{
+  display: inline-block;
+transition: transform 0.3s ease;
+border-radius: 6px;
+box-shadow:0px 15px 25px black;
+}
+.flores:hover{
+  transform: scale(1.2)
 }
 
 .volver {
@@ -93,14 +131,21 @@ main ol li{
 }
 
 .logo img{
-  justify-content: space-around;
-  width: 50px;
+  justify-content: center;
+  width: 30px;
   height: auto;
+  box-shadow: 0px 15px 28px rgb(22, 22, 22);
+}
+
+/*estilos de fondo*/
+
+.gradient {
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(59, 57, 57));
 }
 
 /* Estilos del pie de página */
 footer {
-  background-color: black;
+  background: transparent;
   color: antiquewhite;
   padding: 10px;
   text-align: center;
@@ -119,10 +164,6 @@ a:hover {
 @media (max-width: 480px) {
   nav h1 {
     font-size: 32px;
-  }
-
-  .back img {
-    width: 10%;
   }
 
   .volver {
@@ -144,10 +185,6 @@ a:hover {
 @media (min-width: 1024px) {
   nav h1 {
     font-size: 48px;
-  }
-
-  .back img {
-    width: 10%;
   }
 
   .volver {
