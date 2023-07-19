@@ -176,6 +176,11 @@ a:hover {
     width: 25px;
     height: auto;
   }
+
+  .foto img{
+    width: 50%;
+    height: auto;
+  }
 }
 
 /* estilo de medios desktop */
