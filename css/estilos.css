@@ -58,6 +58,7 @@ main ol li{
   border-radius: 10px;
   box-shadow: 0px 15px 25px rgb(26, 25, 25);
   filter: opacity(0.7);
+  transform: translateX(60px);
 
 }
 
@@ -128,9 +129,8 @@ box-shadow:0px 15px 25px black;
 
 .logo img{
   justify-content: center;
-  width: 30px;
+  width: 45px;
   height: auto;
-  box-shadow: 0px 15px 28px rgb(22, 22, 22);
 }
 
 /*estilos de fondo*/
@@ -173,7 +173,7 @@ a:hover {
   }
 
   .logo img{
-    width: 20px;
+    width: 25px;
     height: auto;
   }
 }
