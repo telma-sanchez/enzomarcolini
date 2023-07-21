@@ -131,13 +131,6 @@ box-shadow:0px 15px 25px black;
   height: auto;
 }
 
-.Nombre img{
-  width: 300px;
-  height: auto;
-  justify-content: center;
-  
-}
-
 /*estilos de fondo*/
 
 .gradient {
@@ -187,7 +180,7 @@ a:hover {
 
   .galeria{
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 200px 200px;
     justify-content: center;
   }
 
