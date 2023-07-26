@@ -1,0 +1,111 @@
+//estilos de medios
+/*estilos de medios mobile*/
+
+@import "../utilidades/variables";
+
+@media (max-width: 767px) {
+    .volver{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .volver a{
+        margin: 10px 0;
+
+    }
+    .logo img{
+        width: 40px;
+        height: auto;
+    }
+    .foto img{
+        width: 100%;
+        height: auto;
+
+    }
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        justify-content: center;
+      }
+    footer{
+        font-size: 14px;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+    .navbar-toggler {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+    .navbar-collapse{
+        display: none;
+    }
+    .navbar-collapse.show {
+        display: flex;
+    }
+    .navbar-nav{
+        flex-direction: column;
+        margin-top: 10px;
+    .navbar-item {
+        text-align: center;
+        margin: 7px 0;
+    }
+    }
+    }
+}
+
+//estilos de medios desktop
+/*estilos de medios desktop*/
+
+@media (min-width: 1024px) {
+    .volver{
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    .volver a{
+        margin-left: 15px; 
+    }
+    .foto img{ 
+        width: 100%;
+        height: auto;
+    }
+    .logo{
+        img{
+            width: 40px;
+            height: auto;
+        }
+    }
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+}
+
+//estilos de medios para tablet
+/*estilos de medios para tablet*/
+
+@media(min-width: 768px) and (max-width: 1023px){
+
+    .foto img{
+        width: 100%;
+        height: auto;
+    }
+    .logo img{
+        width: 40px;
+        height: auto;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+        justify-content: center;
+    }
+
+} 

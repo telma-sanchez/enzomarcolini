@@ -1,232 +1,149 @@
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cinzel', serif;
-}
+/*contenido principal*/
+main {
+  padding: 50px;
+  color: #f5f2f2; }
+  main p, main div, main h1, main h2, main h3, main h4 {
+    text-align: center; }
+  main ol, main li {
+    list-style: none;
+    text-align: center; }
+  main .foto img {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    filter: opacity(0.3); }
+  main .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(200px, 1fr));
+    grid-gap: 10px; }
+    main .galeria a {
+      display: block; }
+    main .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0px 15px 25px black; }
 
-/* Estilos del encabezado */
+.linea img, .realismo img, .micro img, .flores img {
+  display: inline-block;
+  transition: transform 0.3 ease;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px black; }
+
+.linea:hover, .realismo:hover, .micro:hover, .flores:hover {
+  transform: scale(1.2); }
+
+.linea .logo img, .realismo .logo img, .micro .logo img, .flores .logo img {
+  justify-content: center;
+  width: 20px;
+  height: auto; }
+
+/*estilos de encabezados*/
 header {
   color: antiquewhite;
-  text-align: center;
-}
+  text-align: center; }
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+    header nav ul li {
+      margin: 0 10px; }
+      header nav ul li a {
+        color: antiquewhite;
+        text-decoration: none; }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content:center
-}
-
-nav ul li {
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: antiquewhite;
-  text-decoration: none;
-}
-
-.navbar-nav{
-  padding-left: 250px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  font-size: 20px;
-}
-
-
-/* Estilos del contenido principal */
-main {
-  padding: 10px;;
-  color: rgb(248, 224, 194)
-}
-
-main p, div, h1, h2, h3, h4 {
-  text-align: center;
-}
-
-main ol li{
-  list-style: none;
-  text-align: center;
-}
-
-.foto img {
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
-  border-radius: 6px;
-  filter: opacity(0.3);
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
-}
-
-.galeria a {
-  display: block;
-}
-
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0px 10px 25px black;
-}
-
-.linea img{
-display: inline-block;
-transition: transform 0.3s ease;
-border-radius: 6px;
-box-shadow:0px 15px 25px black;
-}
-
-.linea:hover {
-  transform: scale(1.2)
-}
-
-.realismo img{
-  display: inline-block;
-transition: transform 0.3s ease;
-border-radius: 6px;
-box-shadow:0px 15px 25px black;
-}
-.realismo:hover{
-  transform: scale(1.2)
-}
-.micro img{
-  display: inline-block;
-transition: transform 0.3s ease;
-border-radius: 6px;
-box-shadow:0px 15px 25px black;
-}
-.micro:hover{
-  transform: scale(1.2)
-}
-.flores img{
-  display: inline-block;
-  transition: transform 0.3s ease;
-  border-radius: 6px;
-  box-shadow:0px 15px 25px black;
-}
-.flores:hover{
-  transform: scale(1.2)
-}
-
-.volver {
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.volver a {
-  margin-left: 15px;
-}
-
-.logo img{
-  justify-content: center;
-  width: 45px;
-  height: auto;
-}
-
-/*estilos de fondo*/
-
-.gradient {
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(87, 84, 84));
-}
-
-/* Estilos del pie de página */
+/*estilo de footer*/
 footer {
   background: transparent;
   color: antiquewhite;
   padding: 10px;
-  text-align: center;
-}
+  text-align: center; }
 
-/* Estilos específicos de enlaces */
 a {
-  color: rgb(240, 197, 142);
-}
+  color: #f5e9da; }
+  a:hover {
+    text-decoration: underline; }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* estilo de medios mobile */
-@media (max-width: 446px){
-  
+/*estilos de medios mobile*/
+@media (max-width: 767px) {
   .volver {
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-  }
-
+    margin-top: 20px; }
   .volver a {
-    margin: 10px 0;
-  }
-
-  .logo img{
-    width: 25px;
-    height: auto;
-  }
-
-  .foto img{
+    margin: 10px 0; }
+  .logo img {
+    width: 40px;
+    height: auto; }
+  .foto img {
     width: 100%;
-    height: auto;
-  }
-
-
-  .galeria{
+    height: auto; }
+  .galeria {
     display: grid;
-    grid-template-columns: 200px 200px;
-    justify-content: center;
-  }
-
-  footer{
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center; }
+  footer {
     font-size: 14px;
-    text-align: center;
-  }
-  }
-  
-  @media (min-width: 355px){
-
-    .navbar-collapse{
-      display: flex;
-      flex-direction:column;
-
-    }
-  
-    .navbar-toggler{
-      display: flex;
-      flex-direction: column;  
-    }
-    .navbar a{
-      margin-right: 10px;
-      display: flex;
+    text-align: center; }
+  .navbar {
+    flex-direction: column; }
+    .navbar .navbar-toggler {
+      align-self: flex-end;
+      margin-top: 10px; }
+    .navbar .navbar-collapse {
+      display: none; }
+    .navbar .navbar-collapse.show {
+      display: flex; }
+    .navbar .navbar-nav {
       flex-direction: column;
-    }
-  }
+      margin-top: 10px; }
+      .navbar .navbar-nav .navbar-item {
+        text-align: center;
+        margin: 7px 0; } }
 
-/* estilo de medios tablet */
-  @media (min-width: 1024px) {
-
+/*estilos de medios desktop*/
+@media (min-width: 1024px) {
   .volver {
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 30px;
-  }
-
+    margin-top: 30px; }
   .volver a {
-    margin-left: 15px;
-  }
-
-  .foto img{
+    margin-left: 15px; }
+  .foto img {
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
+  .logo img {
+    width: 40px;
+    height: auto; }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center; } }
 
+/*estilos de medios para tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .foto img {
+    width: 100%;
+    height: auto; }
+  .logo img {
+    width: 40px;
+    height: auto; }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    justify-content: center; } }
 
-}
+/*estilos generales*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "cinzel", serif; }
 
+.gradient {
+  background-image: linear-gradient(#363535, black); }

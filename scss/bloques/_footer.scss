@@ -1,0 +1,19 @@
+//estilo de footer
+/*estilo de footer*/
+
+@import "../utilidades/variables";
+
+footer{
+    background: transparent;
+    color: $color-primario;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    color: $color-enlace;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

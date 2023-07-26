@@ -1,0 +1,62 @@
+@import "../utilidades/variables";
+
+//contenido principal 
+/*contenido principal*/
+
+main{
+    padding: 50px;
+    color: $color-secundario;
+    p, div, h1, h2, h3, h4 {
+        text-align: center;
+    }
+    ol, li{
+        list-style: none;
+        text-align: center;
+    }
+    .foto{
+        img{
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-bottom: 50px;
+            border-radius: $borde-redondeado;
+            filter: opacity(0.3);
+        }
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(200px, 1fr));
+        grid-gap: 10px;
+
+        a {
+            display:block;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            border-radius: $borde-redondeado;
+            box-shadow: $box-shadow;
+        }
+    }
+}
+
+.linea, .realismo, .micro, .flores {
+    img{
+        display: inline-block;
+        transition: transform $efecto-transicion;
+        border-radius: $borde-redondeado;
+        box-shadow: $box-shadow;
+
+    }
+
+    &:hover{
+        transform: scale(1.2);
+    }
+
+    .logo img{
+        justify-content: center;
+        width: 20px;
+        height: auto;
+    }
+
+}

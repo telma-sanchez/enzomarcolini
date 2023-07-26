@@ -1,0 +1,14 @@
+//estilos generales
+/*estilos generales*/
+
+@import "../utilidades/variables";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+.gradient{
+    background-image: $color-fondo;
+}
