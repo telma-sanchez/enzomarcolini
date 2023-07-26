@@ -84,7 +84,7 @@ a {
     height: auto; }
   .galeria {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px;
     justify-content: center; }
   footer {
     font-size: 14px;
