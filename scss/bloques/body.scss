@@ -10,5 +10,7 @@ body{
 }
 
 .gradient{
-    background-image: $color-fondo;
+    background-color: #000000;
+    background-image: linear-gradient(208deg, #000000 0%, #2c2b2c 46%, #838381 100%);
+
 }
